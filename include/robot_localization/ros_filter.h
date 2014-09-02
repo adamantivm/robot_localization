@@ -75,6 +75,8 @@ namespace RobotLocalization
       RosFilter() :
           nhLocal_("~")
       {
+        ROS_INFO("+++++++++ RosFilter - Constructor");
+
         // Ensure that anyone who uses this template uses the right
         // kind of template parameter type
         (void) static_cast<FilterBase*>((Filter*) 0);
